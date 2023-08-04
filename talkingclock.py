@@ -72,7 +72,7 @@ class Solution:
         else:
             minute_str = TIMES[minutes]
 
-        output_str = f"It's {TIMES[regular_hours]} {minute_str}{period}"
+        output_str = f"It's {TIMES[regular_hours]} {minute_str} {period}"
         return output_str
 
             #type input_time: string
