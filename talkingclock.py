@@ -52,6 +52,10 @@ TIMES = { 1:'one', 2:'two',
 class Solution:
     def ClockTalker(self, input_time):
         hours, minutes = map(int, input_time.split(':'))
+        if input_time == "00:00":
+                return "It's twelve am"
+        if input_time == "12:00":
+                return "It's twelve pm"
         if hours == 0:
             regular_hours = 12
             period = 'am'
